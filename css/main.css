@@ -83,13 +83,13 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/* General Styles */
+/* Global Styles */
+
 body {
   font-size: 1em;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Lekton", monospace;
   color: #453E4F;
   background-color: white;
-  /* Sometimes the default background for a browser isn't exactly white. Adding a default allows more consistency between browsers. */
 }
 
 ul,
@@ -100,71 +100,24 @@ ol {
 }
 
 a {
-  color: #453E4F;
+  color: #EEEFDA;
   text-decoration: none;
 }
 
-h1 {
-  color: #453E4F;
-  font-family: 'Alike', serif;
-  font-size: 1.75rem;
-  line-height: 1.5;
-  width: 100%
-}
-
-h2 {
-  color: #453E4F;
-  font-family: 'Alike', serif;
-  font-size: 1.25rem;
-  line-height: 1.5;
-  width: 100%;
-  font-weight: 400;
-}
-
-h3 {
-  font-size: 1.75rem;
-}
-
-h4 {
-  font-size: 1.25rem;
-}
-
-h5 {
-  font-size: 1.5rem;
-}
-
-.project-link,
-.language-wrapper p,
-.tool-wrapper p {
-  text-transform: uppercase;
-  font-size: 1.125rem;
-  color: #453E4F;
-}
-
-
-
-.about-info h4,
-.contact-title {
-  font-weight: 400;
-}
-
+h1,
+h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: 'Alike', serif;
-  line-height: 1.5;
-  width: 100%
+  margin: 0;
 }
 
 p,
 li {
-  font-size: 1rem;
+  font-size: 1.25em;
   line-height: 1.5;
-}
-
-span {
-  font-weight: bold;
+  margin: 0;
 }
 
 img {
@@ -179,7 +132,66 @@ address {
   font-style: normal;
 }
 
-/* Structural Styles */
+span {
+  font-weight: bold;
+}
+
+.content-wrapper {
+  /* outline: 3px dotted red; */
+  width: 85%;
+}
+
+h1 {
+  color: #EEEFDA;
+  font-family: "Lexend Tera", sans-serif;
+  font-size: 1.75rem;
+  width: 100% 
+} 
+
+h2 {
+  color: #EEEFDA;
+  font-family: "Lekton", monospace;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  width: 100%;
+}
+
+h3 {
+  color: #152A3E;
+  font-family: "Lekton", monospace;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.5;
+  width: 100%;
+}
+
+h4 {
+  color: #152A3E;
+  font-family: "Lekton", monospace;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  width: 100%;
+}
+
+h5 {
+  color: #152A3E;
+  font-family: "Lekton", monospace;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  width: 100%;
+}
+
+p {
+  color: #453E4F;
+  font-family: "Lekton", monospace;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  width: 100%;
+}
+
 header,
 #work,
 #skills,
@@ -191,127 +203,36 @@ footer {
   flex-flow: row wrap;
 }
 
-.content-wrapper {
-  width: 85%;
-}
-
 #work p,
 #about p {
   width: 100%;
   text-align: left;
 }
 
-/* set the margins & paddings for each section - these are only a suggestion :) */
-/* setting all margins to zero removes all browser added default margins */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
+.project-link,
+.language-wrapper p,
+.tool-wrapper p {
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  color: #453E4F;
 }
 
-p {
-  margin: 0;
+.about-info h4,
+.contact-title {
+  font-weight: 400;
 }
 
-/* then can set the margin & paddings for any element */
+/********************************** Mobile Styles ***********************************/
+
+
+/* Header */
+
 header {
-  padding-top: 30px;
-  padding-bottom: 60px;
+  background-color: #152A3E;
 }
 
 nav {
-  margin-bottom: 60px;
-}
-
-#work {
-  padding-top: 60px;
-}
-
-#skills {
-  padding-bottom: 80px;
-}
-
-#about {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-footer {
-  padding: 80px 0;
-}
-
-h2 {
-  margin-top: 60px;
-}
-
-h3 {
-  margin-bottom: 20px;
-}
-
-h4 {
-  margin: 0 0 40px 0;
-}
-
-.project-description {
-  margin: 0 0 30px 0;
-}
-
-.project-link {
-  margin: 40px 0 60px 0;
-}
-
-#skills {
-  padding-top: 80px;
-}
-
-figure {
-  margin: 20px 0 40px 0;
-}
-
-.skills-header {
-  margin-bottom: 20px;
-}
-
-.about-info h3 {
-  margin: 40px 0 40px 0;
-}
-
-.about-text {
-  margin: 0 0 30px 0;
-}
-
-#contact h3 {
-  margin-bottom: 60px;
-}
-
-.contact-info {
-  margin: 0 0 60px 0;
-}
-
-.contact-title {
-  margin: 0 0 40px 0;
-}
-
-/* -------------------- Base Header Styles -------------------- */
-
-header {
-  background-color: #ffe8d6;
-}
-
-header nav ul li {
-  font-size: .75rem;
-  margin-bottom: 20px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-nav #contact-link {
-  background-color: #F19494;
-  padding: 10px 10px;
-  border-radius: 30px;
+  margin: 30px 0;
 }
 
 nav ul {
@@ -319,24 +240,48 @@ nav ul {
   justify-content: space-between;
 }
 
+nav ul li {
+  font-size: .75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+nav #contact-link {
+  background-color: #CAC691;
+  color:  #152A3E;
+  padding: 10px 10px;
+  border-radius: 30px;
+}
+
+.home-title {
+  padding: 30px 0;
+}
+
 header h1 {
+  margin: 0;
+  padding-bottom: 30px;
+}
+
+header h3 {
+  color: #B4C7D9;
+  font-size: 1rem;
+  line-height: 0;
+  width: 100%;
+  font-weight: 400; 
+  line-height: 1.5em;
+  padding-bottom: 30px;
+}
+
+/* Portfolio - Projects Section */
+
+#work {
+  background-color: #EEEFDA;
   width: 100%;
 }
 
-header h2 {
-  width: 100%
-}
-
-/* -------------------- Mobile Styles - Homepage -------------------- */
-
-/* Portfolio */
-#work,
-#skills {
-  width: 100%;
-}
-
-#work h3 {
-  width: 100%;
+.portfolio-header {
+  margin-top: 80px;
+  margin-bottom: 20px;
 }
 
 .portfolio-wrapper {
@@ -349,13 +294,9 @@ header h2 {
 .home-portfolio-piece {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: stretch;
   flex-direction: column;
   align-items: center;
-}
-
-.home-portfolio-piece h4 {
-  font-weight: bold;
 }
 
 .home-portfolio-piece figure {
@@ -363,50 +304,76 @@ header h2 {
   filter: drop-shadow(1px 2px 6px lightgrey);
 }
 
+.home-portfolio-piece h4 {
+  margin: 20px 0 40px 0;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.project-description {
+  margin: 0 0 30px 0;
+}
+
 .flex-fill {
-  flex-grow: 1;
+  flex-grow: 1; 
 }
 
 .project-link {
-  background-color: #453E4F;
-  padding: .75rem 3.75rem;
+  background-color: #152A3E;
+  padding: 10px 10px;
+  margin: 40px 0 40px 0;
   border-radius: 30px;
   color: #FFFFFF;
+  text-transform: uppercase;
+  font-size: 1.125rem;
 }
 
 .project-link:hover {
-  background-color: #CAC4D1;
-  color: #453E4F;
+  background-color: #B4C7D9;
+  color: #152A3E;
 }
 
+
+/* Portfolio - Skills Section */
+
 #skills {
-  background-color: #FFE8D6;
+  background-color: #F7E8E8;
+  width: 100%;
+}
+
+.skills-header {
+  margin: 60px 0 40px 0;
 }
 
 #skills h4 {
-  margin: 40px 0 40px 0;
+  margin: 20px 0 20px 0;
   font-weight: bold;
+}
+
+.language-wrapper {
+  margin: 0 0 40px 0;
+}
+
+.tool-wrapper {
+margin: 0 0 80px 0;
 }
 
 .language-wrapper p,
 .tool-wrapper p {
-  background-color: #F19494;
+  background-color: #E9B14C;
   padding: 15px 0;
-  margin: 20px 0;
+  margin: 0 0 20px 0;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  color: #453E4F;
 }
 
 .tool {
   width: 100%;
 }
 
-/* About */
-#about {
-  width: 100%;
-}
 
-#profile-image {
-  width: 90%;
-}
+/* About Section */
 
 #about h3,
 #about h4,
@@ -414,33 +381,70 @@ header h2 {
   color: #4a4f3e;
 }
 
-/* -------------------- Base Header Styles -------------------- */
-footer {
-  background-color: #FFE8D6;
+#about {
+  background-color: #EEEFDA;
+  width: 100%
 }
 
-footer .contact-wrapper {
+.about-content-wrapper {
+  margin: 80px 0;
+
+}
+
+#about figure {
+  margin-bottom: 40px;
+  width: 90%;
+}
+
+.about-info h3 {
+  margin-bottom: 60px;
+}
+
+.about-info h4 {
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.about-text {
+  margin: 20px 0 20px 0;
+}
+
+
+/* Footer */
+
+footer {
+  background-color: #F7E8E8;
+}
+
+#contact h3 {
+  margin: 80px 0 60px 0;
+}
+
+.contact-wrapper {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: flex-start;
 }
 
-footer .contact-info {
+.contact-info {
+  margin-bottom: 60px;
   width: 60%;
 }
 
-footer h4 {
-  width: 100%;
+.contact-title {
+  margin: 0 0 30px 0;
+  font-weight: 400;
 }
 
-footer .follow-section {
+.follow-section {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 }
 
-footer .social-icons {
+.social-icons {
   display: flex;
   justify-content: space-around;
 }
@@ -462,7 +466,9 @@ footer .social-icons li i {
   color: #453e4f;
 }
 
-
+.copyright {
+  margin-bottom: 60px;
+}
 
 
 /* ==========================================================================
@@ -552,133 +558,69 @@ footer .social-icons li i {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+
+
 @media only screen and (min-width:768px) {
   /*Tablet styles here*/
 
-  /* General styles */
+  /* Global styles */
+
+
   .content-wrapper {
     max-width: 640px;
   }
 
   /* font styles */
-  h1 {
-    font-size: 2.5rem;
+   h1 {
+    font-size: 3rem;
   }
 
+  
   h2 {
-    font-size: 1.5rem;
-  }
-
-  h3 {
     font-size: 2rem;
   }
 
-  h4 {
+  h3,
+  h5 {
+    font-size: 2.5rem;
+  }
+
+  header h3 {
+    font-size: 1.35rem;
+  }
+
+  h4,
+  p {
     font-size: 1.25rem;
   }
 
-  h5 {
-    font-size: 1.5rem;
-  }
 
   header nav ul li {
     font-size: 1rem;
-  }
+  } 
 
-  /* element margins */
-  /* the list element have 20px of bottom margin already */
+  /* header */
+
+    /* the list elements have 20px of top margin already */
   header {
     padding-top: 60px;
     padding-bottom: 80px;
   }
 
-  nav {
-    margin: 0 0 80px 0;
-  }
-
-  /*#work */
-  #work {
-    padding-top: 80px;
-  }
-
-  #skills {
-    padding-bottom: 80px;
-  }
-
-  footer {
-    padding: 140px 0;
-  }
-
-  #about {
-    padding: 80px 0;
-  }
-
-  footer {
-    padding-bottom: 80px;
-  }
-
-  h2 {
-    margin-top: 80px;
-  }
-
-  .portfolio-header {
-    margin: 0 0 60px 0;
-  }
-
-  .project-description {
-    margin: 0 0 30px 0;
-  }
-
-  .project-link {
-    margin: 40px 0 60px 0;
-  }
-
-  #skills {
-    padding-top: 80px;
-  }
-
-  .skills-header {
-    margin-bottom: 40px;
-  }
-
-  #skills h4 {
-    margin: 40px 0 20px 0;
-  }
-
-  .about-info h3 {
-    margin: 80px 0;
-  }
-
-  .about-info h4 {
-    margin: 0 0 60px 0;
-  }
-
-  .about-text {
-    margin: 0 0 30px 0;
-  }
-
-  .contact-info {
-    margin: 80px 0;
-  }
-
-  .contact-title {
-    margin: 0 0 30px 0;
-  }
-
-  /* header */
-  header .content-wrapper {
+   header .content-wrapper {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
-  }
+  } 
 
-  header nav {
+   header nav {
+    margin: 0 0 80px 0;
     /* keep if using hamburger menu */
     display: flex;
     justify-content: center;
     width: 100%;
     text-transform: uppercase;
-  }
+  } 
 
   header nav ul {
     /* keep if using hamburger menu */
@@ -687,28 +629,49 @@ footer .social-icons li i {
     width: 80%;
   }
 
-  .home-title {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+  h2 {
+    margin-top: 0px;
   }
 
-  .home-title h2 {
-    max-width: 80%;
-  }
+  /* portfolio - Projects Section */
 
-  /* portfolio */
-  .portfolio-wrapper {
+   .portfolio-wrapper {
     justify-content: space-around;
   }
 
-  .home-portfolio-piece {
+  /*#work */
+  #work {
+    padding-top: 80px;
+  }
+
+
+   .home-portfolio-piece {
     width: 45%;
     align-items: center;
   }
 
+  .home-title {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: center;
+  } 
+
+   .home-title h2 {
+    max-width: 80%;
+  } 
+
   .project-description {
     width: 95%;
+    margin: 0 0 30px 0;
+  }
+
+  .portfolio-header {
+    margin: 0 0 60px 0;
+  }
+
+  .project-link {
+    margin: 40px 0 60px 0;
   }
 
   .language-wrapper,
@@ -718,7 +681,7 @@ footer .social-icons li i {
     width: 100%;
     flex-flow: row wrap;
     text-transform: uppercase;
-  }
+  } 
 
   .skill,
   .tool {
@@ -729,9 +692,25 @@ footer .social-icons li i {
   .language-wrapper p,
   .tool-wrapper p {
     padding: 15px 0;
+  } 
+
+/* portfolio - Skills Section */
+
+  #skills {
+    padding: 80px 0;
   }
 
-  /* about */
+  .skills-header {
+    margin-bottom: 40px;
+  }
+
+  #skills h4 {
+    margin: 40px 0 20px 0;
+  }
+
+
+/* about */
+
   .about-content-wrapper {
     display: flex;
     justify-content: center;
@@ -742,14 +721,33 @@ footer .social-icons li i {
     width: 60%;
   }
 
-  .about-info h4 {
-    text-align: left;
+  #about {
+    padding: 80px 0;
   }
 
-  /* Footer */
-  .contact-wrapper {
+  .about-info h3 {
+    margin: 80px 0;
+  }
+
+  .about-info h4 {
+    margin: 0 0 60px 0;
+    text-align: left;
+    font-weight: bold;
+  }
+
+  .about-text {
+    margin: 0 0 30px 0;
+  }
+
+/* Footer */
+
+   .contact-wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+  }
+
+  footer {
+    padding: 140px 0 80px 0;
   }
 
   footer .contact-info {
@@ -775,38 +773,54 @@ footer .social-icons li i {
   footer .copyright {
     width: 100%;
   }
-}
 
-@media only screen and (min-width:1024px) {
+  .contact-info {
+    margin: 80px 0;
+  }
+
+  .contact-title {
+    margin: 0 0 30px 0;
+  } 
+} 
+
+ @media only screen and (min-width:1024px) { 
 
   /* added for landscape tablets and iPad Pro */
-  .content-wrapper {
+   .content-wrapper {
     max-width: 900px;
   }
 
   .about-info h3 {
     font-size: 3.5rem;
   }
-}
+} 
 
-@media only screen and (min-width:1200px) {
+ @media only screen and (min-width:1200px) { 
 
   /*Desktop styles here*/
-  .content-wrapper {
+   .content-wrapper {
     max-width: 1450px;
+  } 
+
+   h2 {
+    margin-top: 0px;
   }
 
   /* font styles */
   h1 {
-    font-size: 4rem;
+    font-size: 4.5rem;
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 
   h3 {
-    font-size: 2.5rem;
+    font-size: 3rem;
+  }
+
+  header h3 {
+    font-size: 1.5rem;
   }
 
   h4 {
@@ -818,55 +832,71 @@ footer .social-icons li i {
   }
 
   .about-info h3 {
-    font-size: 3.75rem;
+    font-size: 3.25rem;
     text-align: left;
   }
 
   .about-info h4 {
-    font-size: 2rem;
+    font-size: 1.25rem;
   }
 
   p {
     font-size: 1.25rem;
   }
 
-  .project-link,
-  .language-wrapper p,
-  .tool-wrapper p {
-    font-size: 1rem;
-  }
+  
+  /* header */
 
-  /* element margins */
-  /* the list element have 20px of bottom margin already */
+    /* the list elements have 20px of top margin already */
   header {
     padding-top: 80px;
     padding-bottom: 140px;
   }
 
-  nav {
-    margin-bottom: 80px;
+  header .content-wrapper {
+    justify-content: flex-end;
   }
+
+  header nav {
+    margin-bottom: 80px;
+    justify-content: flex-end;
+    width: 45%;
+  }
+
+  nav ul li a {
+    padding: 10px 10px;
+  }
+
+  nav ul li a:hover,
+  nav #contact-link:hover {
+    background-color: #E7E5CB;
+    color: #453E4F;
+    padding: 10px 10px;
+    border-radius: 30px;
+  }
+
+  h2 {
+    margin: 40px 0 0 0;
+  } 
+
+
+  /* Portfolio - Projects Section */
 
   #work {
     padding-top: 80px;
   }
 
-  #skills {
-    padding-bottom: 120px;
-  }
+  .home-title {
+    max-width: 95%;
+  } 
 
-  #about {
-    padding-top: 80px;
-    padding-bottom: 80px;
-  }
+   .home-title h2 {
+    max-width: 70%;
+  } 
 
-  footer {
-    padding: 140px 0 140px 0;
-  }
-
-  h2 {
-    margin: 40px 0 0 0;
-  }
+   .home-portfolio-piece {
+    width: 30%;
+  } 
 
   .portfolio-header {
     margin: 0 0 60px 0;
@@ -880,16 +910,48 @@ footer .social-icons li i {
     margin: 40px 0 80px 0;
   }
 
-  #skills {
-    padding-top: 120px;
-  }
+  .project-link,
+  .language-wrapper p,
+  .tool-wrapper p {
+    font-size: 1rem;
+  } 
+
+ 
+/* Portfolio - Skills Section */
 
   #skills .content-wrapper {
     max-width: 900px;
   }
 
+  #skills {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
   .skills-header {
     margin-bottom: 40px;
+  }
+
+  .skill,
+  .tool {
+    width: 30%;
+  } 
+
+  /* Portfolio - About Section */
+
+  .about-content-wrapper {
+    display: flex;
+    justify-content: space-between;
+  } 
+
+  #about {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  #about figure {
+    width: 35%;
+    margin-top: 0;
   }
 
   .about-info h3 {
@@ -898,11 +960,26 @@ footer .social-icons li i {
 
   .about-info h4 {
     margin: 40px 0;
+    font-weight: bold;
   }
+
+  .about-info {
+    width: 58%;
+  } 
 
   .about-text {
     margin: 0 0 30px 0;
   }
+
+  /* contact */
+  
+  footer .content-wrapper {
+    max-width: 70%;
+  }
+
+  footer {
+    padding: 140px 0 140px 0;
+  } 
 
   .contact-info {
     margin: 80px 0 80px 0;
@@ -912,73 +989,12 @@ footer .social-icons li i {
     margin: 0 0 30px 0;
   }
 
-  /* header */
-  header .content-wrapper {
-    justify-content: flex-end;
-  }
-
-  header nav {
-    justify-content: flex-end;
-    width: 45%;
-  }
-
-  nav ul li a {
-    padding: 10px 10px;
-  }
-
-  nav ul li a:hover,
-  nav #contact-link:hover {
-    background-color: #F8C6C6;
-    color: #453E4F;
-    padding: 10px 10px;
-    border-radius: 30px;
-  }
-
-  .home-title {
-    max-width: 95%;
-  }
-
-  .home-title h2 {
-    max-width: 70%;
-  }
-
-  /* portfolio */
-  .home-portfolio-piece {
-    width: 30%;
-  }
-
-  /* skills */
-  .skill,
-  .tool {
-    width: 30%;
-  }
-
-  /* about */
-  .about-content-wrapper {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  #about figure {
-    width: 35%;
-    margin-top: 0;
-  }
-
-  .about-info {
-    width: 58%;
-  }
-
-  /* contact */
-  footer .content-wrapper {
-    max-width: 70%;
-  }
-
-}
+} 
 
 
-@media only screen and (min-width: 35em) {
+ @media only screen and (min-width: 35em) { 
   /* Style adjustments for viewports that meet the condition */
-}
+ }
 
 
 
@@ -987,7 +1003,7 @@ footer .social-icons li i {
 (min-resolution: 1.25dppx),
 (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
-}
+} 
 
 /* ==========================================================================
    Print styles.
@@ -1001,7 +1017,7 @@ footer .social-icons li i {
   *::before,
   *::after {
     background: #fff !important;
-    color: #000 !important;
+    color: #000 !important; 
     /* Black prints faster */
     box-shadow: none !important;
     text-shadow: none !important;
@@ -1018,7 +1034,7 @@ footer .social-icons li i {
 
   abbr[title]::after {
     content: " ("attr(title) ")";
-  }
+  } 
 
   /*
    * Don't show links that are fragment identifiers,
@@ -1037,7 +1053,7 @@ footer .social-icons li i {
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
-  }
+  } 
 
   /*
    * Printing Tables:
@@ -1062,5 +1078,5 @@ footer .social-icons li i {
   h2,
   h3 {
     page-break-after: avoid;
-  }
-}
+  } 
+} 
