@@ -88,7 +88,7 @@ textarea {
 body {
   font-size: 1em;
   font-family: "Lekton", monospace;
-  color: #453E4F;
+  color: #453e4f;
   background-color: white;
 }
 
@@ -99,8 +99,8 @@ ol {
   padding: 0;
 }
 
-a {
-  color: #EEEFDA;
+header a {
+  color: #eeefda;
   text-decoration: none;
 }
 
@@ -128,8 +128,10 @@ figure {
   margin: 0;
 }
 
-address {
+address,
+address a {
   font-style: normal;
+  color: #453e4f;
 }
 
 span {
@@ -141,14 +143,14 @@ span {
 }
 
 h1 {
-  color: #EEEFDA;
+  color: #eeefda;
   font-family: "Lexend Tera", sans-serif;
   font-size: 1.75rem;
-  width: 100% 
-} 
+  width: 100%;
+}
 
 h2 {
-  color: #EEEFDA;
+  color: #eeefda;
   font-family: "Lekton", monospace;
   font-size: 1.25rem;
   line-height: 1.5;
@@ -156,7 +158,7 @@ h2 {
 }
 
 h3 {
-  color: #152A3E;
+  color: #152a3e;
   font-family: "Lekton", monospace;
   font-weight: 400;
   font-size: 2rem;
@@ -165,7 +167,7 @@ h3 {
 }
 
 h4 {
-  color: #152A3E;
+  color: #152a3e;
   font-family: "Lekton", monospace;
   font-weight: 400;
   font-size: 1.5rem;
@@ -174,7 +176,7 @@ h4 {
 }
 
 h5 {
-  color: #152A3E;
+  color: #152a3e;
   font-family: "Lekton", monospace;
   font-weight: 400;
   font-size: 1.5rem;
@@ -183,7 +185,7 @@ h5 {
 }
 
 p {
-  color: #453E4F;
+  color: #453e4f;
   font-family: "Lekton", monospace;
   font-weight: 400;
   font-size: 1rem;
@@ -213,7 +215,7 @@ footer {
 .tool-wrapper p {
   text-transform: uppercase;
   font-size: 1.125rem;
-  color: #453E4F;
+  color: #453e4f;
 }
 
 .about-info h4,
@@ -223,11 +225,10 @@ footer {
 
 /********************************** Mobile Styles ***********************************/
 
-
 /* Header */
 
 header {
-  background-color: #152A3E;
+  background-color: #152a3e;
 }
 
 nav {
@@ -240,14 +241,14 @@ nav ul {
 }
 
 nav ul li {
-  font-size: .75rem;
+  font-size: 0.75rem;
   font-weight: bold;
   text-transform: uppercase;
 }
 
 nav #contact-link {
-  background-color: #CAC691;
-  color:  #152A3E;
+  background-color: #cac691;
+  color: #152a3e;
   padding: 10px 10px;
   border-radius: 30px;
 }
@@ -262,11 +263,11 @@ header h1 {
 }
 
 header h3 {
-  color: #B4C7D9;
+  color: #b4c7d9;
   font-size: 1rem;
   line-height: 0;
   width: 100%;
-  font-weight: 400; 
+  font-weight: 400;
   line-height: 1.5em;
   padding-bottom: 30px;
 }
@@ -274,7 +275,7 @@ header h3 {
 /* Portfolio - Projects Section */
 
 #work {
-  background-color: #EEEFDA;
+  background-color: #eeefda;
   width: 100%;
 }
 
@@ -313,30 +314,25 @@ header h3 {
   margin: 0 0 30px 0;
 }
 
-.flex-fill {
-  flex-grow: 1; 
-}
-
 .project-link {
-  background-color: #152A3E;
+  background-color: #152a3e;
   padding: 10px 10px;
   margin: 40px 0 40px 0;
   border-radius: 30px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-transform: uppercase;
   font-size: 1.125rem;
 }
 
 .project-link:hover {
-  background-color: #B4C7D9;
-  color: #152A3E;
+  background-color: #b4c7d9;
+  color: #152a3e;
 }
-
 
 /* Portfolio - Skills Section */
 
 #skills {
-  background-color: #F7E8E8;
+  background-color: #f7e8e8;
   width: 100%;
 }
 
@@ -354,23 +350,22 @@ header h3 {
 }
 
 .tool-wrapper {
-margin: 0 0 80px 0;
+  margin: 0 0 80px 0;
 }
 
 .language-wrapper p,
 .tool-wrapper p {
-  background-color: #E9B14C;
+  background-color: #e9b14c;
   padding: 15px 0;
   margin: 0 0 20px 0;
   text-transform: uppercase;
   font-size: 1.125rem;
-  color: #453E4F;
+  color: #453e4f;
 }
 
 .tool {
   width: 100%;
 }
-
 
 /* About Section */
 
@@ -381,13 +376,12 @@ margin: 0 0 80px 0;
 }
 
 #about {
-  background-color: #EEEFDA;
-  width: 100%
+  background-color: #eeefda;
+  width: 100%;
 }
 
 .about-content-wrapper {
   margin: 80px 0;
-
 }
 
 #about figure {
@@ -409,11 +403,10 @@ margin: 0 0 80px 0;
   margin: 20px 0 20px 0;
 }
 
-
 /* Footer */
 
 footer {
-  background-color: #F7E8E8;
+  background-color: #f7e8e8;
 }
 
 #contact h3 {
@@ -468,7 +461,6 @@ footer .social-icons li i {
 .copyright {
   margin-bottom: 60px;
 }
-
 
 /* ==========================================================================
    Helper classes
@@ -558,23 +550,20 @@ footer .social-icons li i {
    Modify as content requires.
    ========================================================================== */
 
-
-@media only screen and (min-width:768px) {
+@media only screen and (min-width: 768px) {
   /*Tablet styles here*/
 
   /* Global styles */
-
 
   .content-wrapper {
     max-width: 640px;
   }
 
   /* font styles */
-   h1 {
+  h1 {
     font-size: 3rem;
   }
 
-  
   h2 {
     font-size: 2rem;
   }
@@ -589,37 +578,37 @@ footer .social-icons li i {
   }
 
   h4,
-  p {
+  p,
+  address {
     font-size: 1.25rem;
   }
 
-
   header nav ul li {
     font-size: 1rem;
-  } 
+  }
 
   /* header */
 
-    /* the list elements have 20px of top margin already */
+  /* the list elements have 20px of top margin already */
   header {
     padding-top: 60px;
     padding-bottom: 80px;
   }
 
-   header .content-wrapper {
+  header .content-wrapper {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
-  } 
+  }
 
-   header nav {
+  header nav {
     margin: 0 0 80px 0;
     /* keep if using hamburger menu */
     display: flex;
     justify-content: center;
     width: 100%;
     text-transform: uppercase;
-  } 
+  }
 
   header nav ul {
     /* keep if using hamburger menu */
@@ -634,7 +623,7 @@ footer .social-icons li i {
 
   /* portfolio - Projects Section */
 
-   .portfolio-wrapper {
+  .portfolio-wrapper {
     justify-content: space-around;
   }
 
@@ -643,8 +632,7 @@ footer .social-icons li i {
     padding-top: 80px;
   }
 
-
-   .home-portfolio-piece {
+  .home-portfolio-piece {
     width: 45%;
     align-items: center;
   }
@@ -654,11 +642,11 @@ footer .social-icons li i {
     flex-flow: row wrap;
     justify-content: center;
     text-align: center;
-  } 
+  }
 
-   .home-title h2 {
+  .home-title h2 {
     max-width: 80%;
-  } 
+  }
 
   .project-description {
     width: 95%;
@@ -680,20 +668,19 @@ footer .social-icons li i {
     width: 100%;
     flex-flow: row wrap;
     text-transform: uppercase;
-  } 
+  }
 
   .skill,
   .tool {
-    /*  width: auto; */
     width: 45%;
   }
 
   .language-wrapper p,
   .tool-wrapper p {
     padding: 15px 0;
-  } 
+  }
 
-/* portfolio - Skills Section */
+  /* portfolio - Skills Section */
 
   #skills {
     padding: 80px 0;
@@ -707,8 +694,7 @@ footer .social-icons li i {
     margin: 40px 0 20px 0;
   }
 
-
-/* about */
+  /* about */
 
   .about-content-wrapper {
     display: flex;
@@ -738,9 +724,9 @@ footer .social-icons li i {
     margin: 0 0 30px 0;
   }
 
-/* Footer */
+  /* Footer */
 
-   .contact-wrapper {
+  .contact-wrapper {
     display: flex;
     justify-content: space-around;
   }
@@ -773,35 +759,34 @@ footer .social-icons li i {
     width: 100%;
   }
 
-  .contact-info {
+  .contact-info,
+  address a {
     margin: 80px 0;
   }
 
   .contact-title {
     margin: 0 0 30px 0;
-  } 
-} 
+  }
+}
 
- @media only screen and (min-width:1024px) { 
-
+@media only screen and (min-width: 1024px) {
   /* added for landscape tablets and iPad Pro */
-   .content-wrapper {
+  .content-wrapper {
     max-width: 900px;
   }
 
   .about-info h3 {
     font-size: 3.5rem;
   }
-} 
+}
 
- @media only screen and (min-width:1200px) { 
-
+@media only screen and (min-width: 1200px) {
   /*Desktop styles here*/
-   .content-wrapper {
+  .content-wrapper {
     max-width: 1450px;
-  } 
+  }
 
-   h2 {
+  h2 {
     margin-top: 0px;
   }
 
@@ -839,14 +824,14 @@ footer .social-icons li i {
     font-size: 1.25rem;
   }
 
-  p {
+  p,
+  address a {
     font-size: 1.25rem;
   }
 
-  
   /* header */
 
-    /* the list elements have 20px of top margin already */
+  /* the list elements have 20px of top margin already */
   header {
     padding-top: 80px;
     padding-bottom: 140px;
@@ -868,16 +853,15 @@ footer .social-icons li i {
 
   nav ul li a:hover,
   nav #contact-link:hover {
-    background-color: #E7E5CB;
-    color: #453E4F;
+    background-color: #e7e5cb;
+    color: #453e4f;
     padding: 10px 10px;
     border-radius: 30px;
   }
 
   h2 {
     margin: 40px 0 0 0;
-  } 
-
+  }
 
   /* Portfolio - Projects Section */
 
@@ -887,15 +871,15 @@ footer .social-icons li i {
 
   .home-title {
     max-width: 95%;
-  } 
+  }
 
-   .home-title h2 {
+  .home-title h2 {
     max-width: 70%;
-  } 
+  }
 
-   .home-portfolio-piece {
+  .home-portfolio-piece {
     width: 30%;
-  } 
+  }
 
   .portfolio-header {
     margin: 0 0 60px 0;
@@ -913,10 +897,9 @@ footer .social-icons li i {
   .language-wrapper p,
   .tool-wrapper p {
     font-size: 1rem;
-  } 
+  }
 
- 
-/* Portfolio - Skills Section */
+  /* Portfolio - Skills Section */
 
   #skills .content-wrapper {
     max-width: 900px;
@@ -934,14 +917,14 @@ footer .social-icons li i {
   .skill,
   .tool {
     width: 30%;
-  } 
+  }
 
   /* Portfolio - About Section */
 
   .about-content-wrapper {
     display: flex;
     justify-content: space-between;
-  } 
+  }
 
   #about {
     padding-top: 80px;
@@ -964,21 +947,21 @@ footer .social-icons li i {
 
   .about-info {
     width: 58%;
-  } 
+  }
 
   .about-text {
     margin: 0 0 30px 0;
   }
 
   /* contact */
-  
+
   footer .content-wrapper {
     max-width: 70%;
   }
 
   footer {
     padding: 140px 0 140px 0;
-  } 
+  }
 
   .contact-info {
     margin: 80px 0 80px 0;
@@ -987,22 +970,25 @@ footer .social-icons li i {
   .contact-title {
     margin: 0 0 30px 0;
   }
+}
 
-} 
-
-
- @media only screen and (min-width: 35em) { 
+@media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
- }
-
-
+}
 
 @media print,
-(-webkit-min-device-pixel-ratio: 1.25),
-(min-resolution: 1.25dppx),
-(min-resolution: 120dpi) {
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
-} 
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+  /*Smooths transitions to sections of the site */
+}
 
 /* ==========================================================================
    Print styles.
@@ -1011,12 +997,11 @@ footer .social-icons li i {
    ========================================================================== */
 
 @media print {
-
   *,
   *::before,
   *::after {
     background: #fff !important;
-    color: #000 !important; 
+    color: #000 !important;
     /* Black prints faster */
     box-shadow: none !important;
     text-shadow: none !important;
@@ -1028,12 +1013,12 @@ footer .social-icons li i {
   }
 
   a[href]::after {
-    content: " ("attr(href) ")";
+    content: " (" attr(href) ")";
   }
 
   abbr[title]::after {
-    content: " ("attr(title) ")";
-  } 
+    content: " (" attr(title) ")";
+  }
 
   /*
    * Don't show links that are fragment identifiers,
@@ -1052,7 +1037,7 @@ footer .social-icons li i {
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
-  } 
+  }
 
   /*
    * Printing Tables:
@@ -1077,5 +1062,5 @@ footer .social-icons li i {
   h2,
   h3 {
     page-break-after: avoid;
-  } 
-} 
+  }
+}
